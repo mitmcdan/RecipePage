@@ -48,7 +48,12 @@ h3 {
 }
 
 .recipeDescription {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+}
+
+.recipeDescription svg {
+    padding: 5px 15px 0 15px;
 }
 
 .recipeDescriptionText {
@@ -124,7 +129,13 @@ h3 {
     line-height: 24px;
     text-align: center;
 }
+.sourceText {
+    padding-top: 30px;
+    color: #A9A9A9;
+}
 
 .footer {
-    
+    padding-top: 50px;
+    color: #A9A9A9;
+    text-align: center;
 }
