@@ -40,6 +40,7 @@ h3 {
     display: flex;
     flex-flow: column wrap;
     max-width: 700px;
+    background: #ffffff;
 }
 
 .title {
@@ -47,6 +48,10 @@ h3 {
 }
 
 .recipeDescription {
+    flex-direction: column;
+}
+
+.recipeDescriptionText {
     font-style: italic;
 }
 
@@ -64,6 +69,7 @@ h3 {
     vertical-align: middle;
     /* line-height: 16px; */
     padding: 5px 15px;
+    max-width: 600px;
 }
 
 .infoIcon {
@@ -73,16 +79,26 @@ h3 {
 .infoText {
     text-align: left;
     padding-left: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 #cakeImage {
     height: auto;
     width: 90%;
     border-radius: 12px;
+    padding: 15px;
 }
 
 .wrapper {
+    flex-direction: row;
+}
 
+.ingredient input[type="checkbox"] {
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 .instructions {
@@ -90,7 +106,23 @@ h3 {
 }
 
 .instructionStep {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
 
+.stepNumber {
+    background: #F2994A;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
 }
 
 .footer {
